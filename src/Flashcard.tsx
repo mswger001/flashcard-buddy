@@ -2,11 +2,12 @@
 import React, { useState } from "react";
 import "./Flash.css"; // Optional CSS for styling
 
-const Flashcard = ({ flashcard, onNext, currentIndex, totalCards }) => {
+const Flashcard = ({ flashcard }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleFlip = () => {
     setIsFlipped(!isFlipped);
+    console.log(flashcard);
   };
 
   return (

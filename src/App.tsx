@@ -168,6 +168,7 @@ const App = () => {
   const createFlashcardsFromMistakes = (data) => {
     return data.map((mistake) => ({
       Student_ID: mistake.Student_ID,
+      Mistake_Type: mistake.Mistake_Type,
       Original_Sentence: mistake.Original_Sentence,
       Corrected_Sentence: mistake.Corrected_Sentence,
       interval: 1,
@@ -206,7 +207,7 @@ const App = () => {
           Math.ceil(b.interval * b.easeFactor),
           "day"
         );
-        return nextReviewA - nextReviewB; // Sort by next review date
+        return nextReviewA.valueOf() - nextReviewB.valueOf(); // Sort by next review date
       });
     }
 
