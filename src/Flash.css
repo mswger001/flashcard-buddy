@@ -1,0 +1,51 @@
+.flashcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 250px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 2px;
+  margin: 10px;
+  transition: transform 0.6s;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flashcard.flipped {
+  transform: rotateY(180deg);
+}
+
+.flashcard .backR {
+  transform: rotateY(180deg);
+}
+
+.flashcard {
+  background-color: #11ce7f5d;
+}
+
+.flashcard h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+.flashcard h3 {
+  margin-bottom: 10px;
+}
+
+.flashcard p {
+  font-size: 18px;
+}
+
+.student-input {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}

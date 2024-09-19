@@ -1,0 +1,43 @@
+.flashcard {
+  /* Existing styles for .flashcard */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.front,
+.back {
+  /* Apply to both front and back */
+  text-align: center;
+}
+
+.mistake-type {
+  /* Styles for mistake type */
+}
+
+.original-sentence {
+  margin-top: 20px;
+}
+
+/* General App styling */
+.App {
+  font-family: "Arial", sans-serif;
+  background-color: #f5f7fa;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.student-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+/* Other styles for button, etc. */
